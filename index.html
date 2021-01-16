@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sci-fi Calculator</h1>
+      <div class="calci">
+        <input type="text" name="screen" id="screen" />
+        <table>
+          <tr>
+            <td><button class="btn">sin</button></td>
+            <td><button class="btn">cos</button></td>
+            <td><button class="btn">tan</button></td>
+            <td>
+              <button class="btn">x<sup>3</sup></button>
+            </td>
+          </tr>
+          <tr>
+            <td><button class="btn">(</button></td>
+            <td><button class="btn">)</button></td>
+            <td><button class="btn">C</button></td>
+            <td><button class="btn">←</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">7</button></td>
+            <td><button class="btn">8</button></td>
+            <td><button class="btn">9</button></td>
+            <td><button class="btn">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">4</button></td>
+            <td><button class="btn">5</button></td>
+            <td><button class="btn">6</button></td>
+            <td><button class="btn">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">1</button></td>
+            <td><button class="btn">2</button></td>
+            <td><button class="btn">3</button></td>
+            <td><button class="btn">x</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">.</button></td>
+            <td><button class="btn">0</button></td>
+            <td><button class="btn">/</button></td>
+            <td><button class="btn">=</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- <button id="show">&gt;</button> -->
+    <div id="hist">
+      <details>
+        <summary>History</summary>
+        <div id="hist_content">
+
+        </div>
+      </details>
+      <!-- <button id="hide">&lt;</button>   -->
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

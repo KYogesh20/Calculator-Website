@@ -120,24 +120,25 @@ details > summary {
 /* Mobile View */
 
 @media only screen and (max-width: 500px) {
+  
   body {
     background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    /* box-sizing: border-box; */
   }
 
   .container {
     background: transparent;
     color: orangered;
-    width: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
   }
 
   input {
     color: orangered;
     font-size: 34px;
     height: 57px;
-    width: 100%;
+    width: auto;
     border-radius: 9px;
     background: transparent;
   }
@@ -148,7 +149,7 @@ details > summary {
     outline: none;
     border-radius: 9px;
     font-size: 175%;
-    min-width: 25%;
+    min-width: 23%;
     height: 50px;
     background: transparent;
   }

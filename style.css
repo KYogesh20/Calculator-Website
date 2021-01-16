@@ -1,12 +1,11 @@
 body {
-  background-color: rgb(40,44,52);
+  background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
   box-sizing: border-box;
   display: flex;
 }
 
 .container {
-  
-  background-color: rgb(40,44,52);
+  background: transparent;
   color: orangered;
 }
 
@@ -18,62 +17,62 @@ input {
   color: orangered;
   font-size: 34px;
   height: 57px;
-  
+
   border-radius: 9px;
-  background-color: rgb(40,44,52);
+  background: transparent;
 }
 
-.btn:hover {
+/* .btn:hover {
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
-}
+} */
 
-button,.btn {
+button,
+.btn {
   color: orangered;
   outline: none;
   border-radius: 9px;
   font-size: 40px;
   width: 100px;
   height: 55px;
-  background-color:rgb(40,44,52);
+  background: transparent;
 }
 
 .calci {
   display: inline-block;
-  background-color: rgb(40,44,52);
-  
+  background: transparent;
 }
 
-.btn:hover,.hide:hover,.show:hover {
+.btn:hover,
+.hide:hover,
+.show:hover {
   cursor: pointer;
 }
 
 #hist {
-  
   display: flex;
   margin-top: 78px;
   font-size: 23px;
   width: 0px;
-  
+
   height: 411px;
   flex-direction: column;
-  
+
   min-width: fit-content;
-  overflow:auto;
+  overflow: auto;
 }
 
 p {
   margin-top: 0;
   margin-left: 2px;
   margin-bottom: auto;
-  
 }
 
-#box{
+#box {
   margin-top: 2px;
-  background-color: rgb(40,44,52);
+  background: transparent;
   color: orangered;
   min-width: fit-content;
   display: flex;
@@ -81,14 +80,13 @@ p {
   border-bottom: 1px solid orange;
   width: 90px;
   margin-left: 5px;
-  
 }
 
 details > summary {
   margin-top: 2px;
   padding: 4px;
   width: 200px;
-  background-color: rgb(40,44,52);
+  background: transparent;
   color: orangered;
   border: none;
   box-shadow: 1px 1px 2px #bbbbbb;
@@ -104,15 +102,106 @@ details > summary {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    background: transparent;
+    color: orangered;
+    width: 100%;
+  }
+
+  input {
+    color: orangered;
+    font-size: 34px;
+    height: 57px;
+    width: auto;
+    border-radius: 9px;
+    background: transparent;
+  }
+
+  button,
+  .btn {
+    color: orangered;
+    outline: none;
+    border-radius: 9px;
+    font-size: 175%;
+    min-width: 25%;
+    height: 50px;
+    background: transparent;
+  }
+
+  .calci {
+    display: inline-block;
+    background: transparent;
+  }
+
+  .btn:hover,
+  .hide:hover,
+  .show:hover {
+    cursor: pointer;
+  }
+  
+  #hist {
+    display: flex;
+    font-size: 23px;
+    width: 100%;
+    margin-top: 2px;
+    /* height: 411px; */
+    flex-direction: column;
+
+    min-width: fit-content;
+  }
+
+  /* p {
+    margin-top: 0;
+    margin-left: 2px;
+    margin-bottom: auto;
+  } */
+
+  #box {
+    margin-top: 2px;
+    background: transparent;
+    color: orangered;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+    width: auto;
+    /* margin-left: 5px; */
+    
+  }
+
+  details > summary {
+    /* margin-top: 2px; */
+    /* padding: 4px; */
+    width: 98%;
+    background: transparent;
+    color: orangered;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  
 }
